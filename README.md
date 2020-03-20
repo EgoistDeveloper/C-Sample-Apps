@@ -1,2 +1,2 @@
-# C-Sample-Apps
+# C# Sample Apps
 Sample apps
