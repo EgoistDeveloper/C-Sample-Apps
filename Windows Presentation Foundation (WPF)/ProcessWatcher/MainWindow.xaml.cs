@@ -55,6 +55,13 @@ namespace ProcessWatcher
         /// <param name="e"></param>
         private void ProcessStartEvent_EventArrived(object sender, EventArrivedEventArgs e)
         {
+            // e.NewEvent.Properties["ProcessName"].Value
+            // e.NewEvent.Properties["ParentProcessID"].Value
+            // e.NewEvent.Properties["ProcessID"].Value
+            // e.NewEvent.Properties["SessionID"].Value
+            // e.NewEvent.Properties["TIME_CREATED"].Value
+            // e.NewEvent.Properties["Sid"].Value
+
             if (e.NewEvent.Properties["ProcessName"].Value.ToString() == ExeFileName)
             {
                 // hedef process başladığında yapılacaklar
